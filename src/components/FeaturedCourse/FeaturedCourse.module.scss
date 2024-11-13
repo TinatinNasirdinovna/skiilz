@@ -1,0 +1,185 @@
+#course {
+  background: rgba(35, 35, 59, 1);
+  padding: 80px 0;
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 44px;
+    color: rgba(246, 246, 248, 1);
+    font-weight: 700;
+  }
+  hr {
+    width: 150px;
+    border: 2px solid rgba(87, 217, 166, 1);
+  }
+  p {
+    font-size: 22px;
+    width: 644px;
+    margin: 40px 0;
+    color: rgba(246, 246, 248, 1);
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+  }
+  button {
+    font-size: 18px;
+    padding: 20px 28px;
+    color: rgba(28, 28, 51, 1);
+    background: rgba(87, 217, 166, 1);
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-weight: 400;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 0;
+  .card {
+    width: 380px;
+    background-color: white;
+    color: black;
+    div {
+      padding: 20px;
+      h2 {
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+      }
+      h3 {
+        font-size: 17px;
+        font-weight: 400;
+        color: rgba(78, 78, 101, 1);
+        padding: 20px 0;
+      }
+      h4 {
+        font-size: 22px;
+        color: rgba(28, 28, 51, 1);
+        font-weight: 400;
+      }
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(87, 217, 166, 1);
+        padding: 15px 0;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 1460px) {
+  .cards {
+    gap: 20px;
+    .card {
+      width: 320px;
+      img {
+        width: inherit;
+      }
+    }
+  }
+}
+@media (max-width: 1132px) {
+  .course {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+    button {
+      font-size: 16px;
+      padding: 16px 24px;
+    }
+  }
+  .cards {
+    gap: 20px;
+    .card {
+      width: 280px;
+      img {
+        width: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .course {
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      font-size: 13px;
+      padding: 16px 24px;
+    }
+  }
+  .cards {
+    gap: 15px;
+    overflow-x: scroll;
+    width: 90%;
+    .card {
+      width: 280px;
+      img {
+        width: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .course {
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 15px;
+      width: 70%;
+    }
+    button {
+      font-size: 12px;
+      padding: 12px 18px;
+    }
+  }
+  .cards {
+    gap: 15px;
+    overflow-x: scroll;
+    width: 90%;
+    .card {
+      width: 240px;
+      div {
+        padding: 10px;
+        h2 {
+          font-size: 16px;
+        }
+         h3 {
+            font-size: 15px;
+            padding: 10px 0;
+          }
+          h4 {
+          font-size: 13px;
+          }
+          a{
+          font-size: 13px;
+          }
+      }
+      img {
+        width: inherit;
+      }
+    }
+  }
+}
